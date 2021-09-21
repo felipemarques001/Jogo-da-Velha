@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#B0E0E6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+        /* PERSONALIZANDO A DIV QUE MOSTRA O VITORIOSO */
+.vitória{
+    background-color: #153959;
+    width: 0vw;
+    height: 0vh;
+    color: #B0E0E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    font-size: 0px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.vitória i{
+    color: #fd1919;
+    font-size: 0px;
+    transition: 0.5s;
+}
+
+.mostrarVitória{
+    visibility: visible;
+    width: 50vw;
+    height: 80vh;
+    font-size: 40px;
+    border-radius: 8px;
+}
+.mostrarVitória i{
+    color: #fd1919;
+    font-size: 50px;
+}
+
+
+
+        /* PERSONALIZANDO O TABULEIRO */
+#container{
+    background-color: #153959;
+    width: 50vw;
+    height: 80vh;
+
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 10px 10px 20px #1c1c1c;
+}
+body #container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #fd1919;
+}
+#um{ 
+   border-right: 4px solid #B0E0E6;
+   border-bottom: 4px solid #B0E0E6;
+}
+#dois{
+    border-right: 4px solid #B0E0E6;
+    border-bottom: 4px solid #B0E0E6;
+}
+#três{
+    border-bottom: 4px solid #B0E0E6;
+}
+#quatro{
+    border-right: 4px solid #B0E0E6;
+    border-bottom: 4px solid #B0E0E6;
+}
+#cinco{
+    border-right: 4px solid #B0E0E6;
+    border-bottom: 4px solid #B0E0E6;
+}
+#seis{
+    border-bottom: 4px solid #B0E0E6;
+}
+#sete{
+    border-right: 4px solid #B0E0E6;
+}
+#oito{
+    border-right: 4px solid #B0E0E6;
+}
+
+@media(max-width:750px){
+        /* PERSONALIZANDO O TABULEIRO */
+    #container{
+        width: 80vw;
+        height: 90vh;
+    }
+    body #container div{
+        font-size: 60px;
+    }
+
+        /* PERSONALIZANDO A DIV QUE MOSTRA O VITORIOSO */
+    .vitória{
+
+        width: 0vw;
+        height: 0vh;
+    }   
+    .mostrarVitória{
+        width: 80vw;
+        height: 90vh;
+    }
+}
+@media(max-width:450px){
+        /* PERSONALIZANDO O TABULEIRO */
+    #container{
+        width: 90vw;
+        height: 95vh;
+    }
+    body #container div{
+        font-size: 50px;
+    }
+
+        /* PERSONALIZANDO A DIV QUE MOSTRA O VITORIOSO */
+    .vitória{
+        width: 0vw;
+        height: 0vh;
+    }   
+    .mostrarVitória{
+        width: 90vw;
+        height: 95vh;
+    }
+}

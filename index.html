@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jogo da Velha</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/e3693af1ba.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <section id="container">
+        <div id="um" onclick="adicionar(um)"></div>
+        <div id="dois" onclick="adicionar(dois)"></div>
+        <div id="três" onclick="adicionar(três)"></div>
+        <div id="quatro" onclick="adicionar(quatro)"></div>
+        <div id="cinco" onclick="adicionar(cinco)"></div>
+        <div id="seis" onclick="adicionar(seis)"></div>
+        <div id="sete" onclick="adicionar(sete)"></div>
+        <div id="oito" onclick="adicionar(oito)"></div>
+        <div id="nove" onclick="adicionar(nove)"></div>
+    </section>
+
+    <section class="vitória" id="x">
+        <p>Vitória do jogador</p>
+        <i class="fas fa-times"></i>
+    </section>
+
+    <section class="vitória" id="o">
+        <p>Vitória do jogador</p>
+        <i class="far fa-circle"></i>
+    </section>
+
+    <section class="vitória" id="empate">
+        <p>Empate</p>
+        <i class="fas fa-hashtag"></i>
+    </section>
+
+
+    <script src="script.js"></script>
+ </body>
+ </html>
